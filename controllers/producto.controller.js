@@ -51,7 +51,7 @@ function registrarProducto(req, res){
             
         }else{
             //Si se encuenra el producto sacamos un error
-            res.status(400).send({
+            res.status(202).send({
                 message: `El producto con codigo ${req.body.codigo} ya se encuentra registrado`
             })
         }
